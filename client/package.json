@@ -12,9 +12,14 @@
   "dependencies": {
     "axios": "^0.16.2",
     "bootstrap-sass": "^3.3.7",
+    "jwt-decode": "^2.2.0",
     "path": "^0.12.7",
     "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
+    "react-fontawesome": "^1.6.1",
+    "react-icons": "^2.2.7",
+    "react-overlays": "^0.8.2",
     "react-router": "^4.2.0",
     "webpack": "^3.6.0"
   }
