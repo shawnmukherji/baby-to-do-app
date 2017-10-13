@@ -34,4 +34,16 @@ var redirectIfLogged = (nextState, replace, next) => {
 $(document).foundation();
 
 //App css-sass
-require('style!')
+require('style!css!sass!applicationStyles');
+
+ReactDOM.render(
+    <Router history={hashHistory}>
+        <Route path="/">
+         <Route path="todos" component={TodoApp} onEnter={requireLogin}/>
+         <Route path="signup" component={SignUp} />
+         <Route path="password" component={Password} onEnter={redirectIfLogged} />
+         <IndexRoute component={Login} onEnter={redirectIfLogged}/>
+         </Route>
+        </Router>,
+        document.getElementById('app')
+);
