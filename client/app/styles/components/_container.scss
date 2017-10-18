@@ -1,0 +1,60 @@
+.box{
+    background-color: $light-grey;
+    border: 1px solid $light-grey-border;
+    border-radius: 5px;
+    padding: 0;
+    height: auto;
+  
+    .container__header{
+      border-bottom: 1px solid $light-grey-border;
+      padding: 1rem;
+  
+      label{
+        cursor: pointer;
+      }
+  
+      input:focus{
+        border-color: #cacaca;
+        box-shadow: inset 0 0 1px #2199e8, 0 0 2px #2199e8;
+      }
+    }
+  
+    .container__todos{
+      padding: 0;
+      border-top: 1px solid $light-grey-border;
+      border-bottom: 1px solid $light-grey-border;
+      margin: 0;
+      width: 100%;
+      display: table;
+      list-style-type: none;
+  
+      .todo{
+        padding: 1rem;
+      }
+      .container__message{
+        color: $light-color;
+        margin: 0 auto;
+        padding: 29px;
+        text-align: center;
+      }
+    }
+  
+    .container__footer{
+      padding: 1rem;
+      border-top: 1px solid $light-grey-border;
+  
+      button{
+        margin: 0;
+      }
+  
+      input{
+        margin-bottom: 1rem;
+      }
+  
+      input:focus{
+        border-color: #cacaca;
+        box-shadow: inset 0 0 1px #2199e8, 0 0 2px #2199e8;
+      }
+    }
+  }
+  
