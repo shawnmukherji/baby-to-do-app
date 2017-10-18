@@ -1,0 +1,94 @@
+
+.button-logout {
+    position:absolute;
+    list-style-type: none;
+    top:0;
+    right:0;
+    padding: 10px 20px 0px 0px;
+    color: #2199e8;
+      font-size: 1rem;
+  
+    a{
+      text-decoration: none;
+    }
+  
+    .dropdown-menu{
+      left:-11px;
+      min-width:120px;
+      margin: 0;
+      padding: 0;
+  
+    }
+  
+    .list-unstyled{
+      margin: 0;
+      padding: 10px;
+      display: table;
+      transition: color .3s ease;
+      @include span(12);
+  
+      a{
+        color:#999;
+        transition: color .3s ease;
+      }
+  
+      a:focus{
+        outline: none;
+        outline-offset: 0;
+      }
+      a:hover{
+        color: #2199e8;
+      }
+  
+      .delete{
+        list-style-type: none;
+        @include span(12);
+        .col1{
+          @include span(6);
+          text-align: center;
+  
+          .check{
+            color:#999;
+          }
+  
+          .check:hover{
+            color: #2199e8;
+            transition: color .3s ease;
+          }
+        }
+  
+        .col2{
+          @include span(6 at 6);
+          text-align: center;
+  
+          .back{
+            color:#999;
+          }
+  
+          .back:hover{
+            color: #2199e8;
+            transition: color .3s ease;
+          }
+        }
+      }
+    }
+  
+    .user{
+      color: #2199e8;
+      list-style-type: none;
+      margin: 0;
+  
+        li{
+          display: inline;
+          vertical-align: middle;
+          padding-left: 5px;
+        }
+    }
+  
+    .user:hover{
+      color: #2199e8;
+      text-decoration: underline;
+    }
+  
+  }
+  
