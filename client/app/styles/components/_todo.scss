@@ -1,0 +1,85 @@
+
+$susy:(
+	columns:12,
+	gutters:0,
+	math:fluid,
+	output:float,
+	gutter-position:inside,
+	container-position: center,
+);
+
+.todo{
+  @include span(12);
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  padding: 1rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  transition: background .3s ease;
+	position: relative;
+
+  .col1{
+    @include span(1);
+		// position: absolute;
+		height: 100%;
+		input{
+
+			vertical-align: middle;
+			margin:0;
+			// top: 50%;
+		}
+  }
+
+  .col2{
+    @include span(10 at 1);
+    padding: 0;
+
+		form{
+			vertical-align: center;
+			input{
+				margin:0;
+			}
+		}
+    p{
+      margin:0;
+    }
+  }
+
+  .col3{
+    @include span(1 at 12);
+    margin:0;
+    text-align:right;
+    color: #dadada;
+		list-style-type: none;
+
+    .edit:hover{
+      transition: color .3s ease;
+      color: grey;
+    }
+    .delete:hover{
+      transition: color .3s ease;
+      color: grey;
+    }
+  }
+
+
+  &:hover{
+    background: #f0f0f0;
+  }
+}
+
+.todo__subtext{
+  color: #999;
+	font-size: 0.85rem;
+}
+
+.todo-completed{
+  p{
+    color: $light-color;
+    text-decoration: line-through;
+  }
+  .todo__subtext{
+    text-decoration:none;
+  }
+}
